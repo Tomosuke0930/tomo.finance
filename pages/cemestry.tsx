@@ -21,7 +21,7 @@ const Cemestry = () => (
   <Box>
     <HStack>
       <Heading>TSHARE-FTM-LP</Heading>
-      <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
+      <Image src='' alt='Dan Abramov' />
 
     </HStack>
     <Text>Deposit TSHARE-FTM-LP Earn</Text>
