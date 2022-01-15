@@ -11,41 +11,44 @@ import NextLink from 'next/link';
       bg="blackAlpha.900"
       color="white"
     >
-      <Flex align="center" mr={5}>
-        <Heading as="h3" size="lg" letterSpacing={"tighter"}>
+    
+
+      {/* Linkのアンダーラインを消したい */}
+      <HStack fontSize={12}>
+      <Heading as="h4" mr={4} size="lg" letterSpacing={"tighter"}>
           Tomo Finance
         </Heading>
-      </Flex>
-      {/* Linkのアンダーラインを消したい */}
-      <HStack fontSize={14}>
             {/* フォントサイズ指定したけど？ */}
-            <NextLink href='/home' passHref >
+            <NextLink href='/' passHref >
                 <Link>Home</Link>
             </NextLink>
-            <NextLink href='/home' passHref>
+            <NextLink href='/cemestry' passHref>
                 <Link>CEMESTRY</Link>
             </NextLink>
-            <NextLink href='/home' passHref>
+            <NextLink href='/masonry' passHref>
                 <Link>MASONRY</Link>
             </NextLink>
-            <NextLink href='/home' passHref>
+            <NextLink href='/pit' passHref>
                 <Link>PIT</Link>
             </NextLink>
-            <NextLink href='/home' passHref>
+            <NextLink href='/sbs' passHref>
                 <Link>SBS</Link>
             </NextLink>
-            <NextLink href='/home' passHref>
+            <NextLink href='/liquidity' passHref>
                 <Link>LIQUIDITY</Link>
             </NextLink>
-            <NextLink href='/home' passHref>
+            <NextLink href='/regurations' passHref>
                 <Link>REGULATIONS</Link>
+            </NextLink>
+            <NextLink href='/bthlabo' passHref>
+                <Link>BTHLabo</Link>
             </NextLink>
             <ButtonGroup 
                 ml={4} 
                 color="blackAlpha.700" 
                 backgroundColor="whiteAlpha.900"
                 rounded="md"
-                size="sm"
+                size="xs"
             >
                 <Button>MY WALLET</Button>
             </ButtonGroup>
