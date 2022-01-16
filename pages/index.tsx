@@ -1,5 +1,5 @@
 import { WarningIcon, WarningTwoIcon } from '@chakra-ui/icons'
-import { Box, Button, ButtonGroup, Center, Divider, HStack, Image,Text } from '@chakra-ui/react'
+import { Box, Button, ButtonGroup, Center, Divider, Flex, HStack, Image,SimpleGrid,Spacer,Stack,Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -41,28 +41,27 @@ const Home = () => (
     </Box>
     </Center>
 
-
-    <HStack textAlign="center">
-    <Box backgroundColor={'white'} h={20} opacity="90%" rounded="md" p={4} my={6} mx={2}>
-      <Text color={'blackAlpha.700'} fontSize="sm">Total Value Locked</Text>
-      <Text color={'blackAlpha.700'} fontSize="sm">$1,434,811,655</Text>
-    </Box>
-    <Box display="flex" h={20} backgroundColor={'white'} opacity="90%" p={4} rounded="md">
+    <SimpleGrid columns={2} my={6} mx={2} spacing={10}>
+      <Box backgroundColor={'white'}  opacity="90%" rounded="md" p={4} width="33%">
+        <Text color={'blackAlpha.700'} fontSize="sm">Total Value Locked</Text>
+        <Text color={'blackAlpha.700'} fontSize="sm">$1,434,811,655</Text>
+      </Box>
+      <Box display="flex" backgroundColor={'white'} opacity="90%" p={4} rounded="md"> 
+        <HStack>
+      <Button letterSpacing="tight" size='xs' bg="#561EB0" color="white" rounded="sm" _hover={{ bg: '#000' }}>STAKE NOW</Button>
+      <Button letterSpacing="tight" size='xs'  bg="#CBD5E0" rounded="sm" color="blackAlpha.900" _hover={{ color: 'white', bg:'gray.400' }}>FARM NOW</Button>
+      <Button letterSpacing="tight" size='xs'  bg="#CBD5E0" rounded="sm" color="blackAlpha.900" _hover={{ color: 'white', bg:'gray.400' }}>BUY TOMO</Button>
+      <Button letterSpacing="tight" size='xs'bg="#561EB0" color="white" rounded="sm" _hover={{ bg: '#000' }}>BUY TOMOSHARE</Button>
+      </HStack>
+      </Box>
       
-      <HStack>
-    <Button letterSpacing="tight" size='xs' bg="#561EB0" color="white" rounded="sm" _hover={{ bg: '#000' }}>STAKE NOW</Button>
-    <Button letterSpacing="tight" size='xs'  bg="#CBD5E0" rounded="sm" color="blackAlpha.900" _hover={{ color: 'white', bg:'gray.400' }}>FARM NOW</Button>
-    <Button letterSpacing="tight" size='xs'  bg="#CBD5E0" rounded="sm" color="blackAlpha.900" _hover={{ color: 'white', bg:'gray.400' }}>BUY TOMO</Button>
-    <Button letterSpacing="tight" size='xs'bg="#561EB0" color="white" rounded="sm" _hover={{ bg: '#000' }}>BUY TOMOSHARE</Button>
-    </HStack>
-    </Box>
-    </HStack>
+    </SimpleGrid>  
+
     
-    
-    <Box display="flex" justifyContent="center" m={4}>
-    <HStack>
-      <Box textAlign="center"  backgroundColor={'white'} color="black" opacity="90%" rounded="md" p={3} >
-        <HStack >
+    <SimpleGrid columns={3} m={4} spacing={30}>
+
+        <Box textAlign="center"  backgroundColor={'white'} color="black" opacity="90%" rounded="md" p={3} >
+        <Stack>
           <Text>TOMB</Text>
           <ButtonGroup border="4px">
             <Button>+</Button>
@@ -71,7 +70,7 @@ const Home = () => (
             boxSize='20px'
             src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png"/>
           </ButtonGroup>
-        </HStack>
+        </Stack>
         <Box/>
         <Image 
           rounded="full"
@@ -87,6 +86,7 @@ const Home = () => (
         <Text fontSize="xx-small">Circulating Supply: 146961391</Text>
         <Text fontSize="xx-small">Total Supply: 146961523</Text>
       </Box>
+      
       <Box textAlign="center"  backgroundColor={'white'} color="black" opacity="90%" rounded="md" p={3}>
         <HStack >
           <Text>TOMB</Text>
@@ -113,7 +113,7 @@ const Home = () => (
         <Text fontSize="xx-small">Circulating Supply: 146961391</Text>
         <Text fontSize="xx-small">Total Supply: 146961523</Text>
       </Box>
-      <Box textAlign="center"  backgroundColor={'white'} color="black" opacity="90%" rounded="md" p={3}>
+      <Box textAlign="center"  backgroundColor={'white'} color="black" opacity="90%" rounded="md" p={3} >
         <HStack >
           <Text>TOMB</Text>
           <ButtonGroup border="4px">
@@ -139,8 +139,7 @@ const Home = () => (
         <Text fontSize="xx-small">Circulating Supply: 146961391</Text>
         <Text fontSize="xx-small">Total Supply: 146961523</Text>
       </Box>
-    </HStack>
-    </Box>
+    </SimpleGrid>
     <Footer/>
   </Box>
 )
