@@ -55,14 +55,11 @@ function Header() {
           <NextLink href="/sbs" passHref>
             <Link p={2}>SBS</Link>
           </NextLink>
-          <NextLink href="/liquidity" passHref>
-            <Link p={2}>LIQUIDITY</Link>
-          </NextLink>
           <NextLink href="/regurations" passHref>
             <Link p={2}>REGULATIONS</Link>
           </NextLink>
-          <NextLink href="/bthlabo" passHref>
-            <Link>BTHLabo</Link>
+          <NextLink href="/citlabo" passHref>
+            <Link>CITLabo</Link>
           </NextLink>
           <ButtonGroup
             ml={3}
