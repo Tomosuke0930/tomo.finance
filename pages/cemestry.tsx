@@ -4,7 +4,11 @@ import Header from '../components/Header'
 
 
 const Cemestry = () => (
-  <Box>
+  <Box
+  bgImage="https://external-preview.redd.it/Y3bRw6FPYPdvBiw71-1E6Uh5fSvKgq8PB4nr8qJKeAc.jpg?auto=webp&s=e29f813bf0a3ee6fc8561a7a93071021323a3a00"
+  bgRepeat="no-repeat"
+  bgSize="cover"
+  >
   <Header/>
   <Heading as="h4" mr={4} size="lg" letterSpacing={"tighter"}>
     Earn TOMOSHARE by staking LP
@@ -21,7 +25,7 @@ const Cemestry = () => (
   <Box>
     <HStack>
       <Heading>TSHARE-FTM-LP</Heading>
-      <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
+      <Image src='' alt='Dan Abramov' />
 
     </HStack>
     <Text>Deposit TSHARE-FTM-LP Earn</Text>
