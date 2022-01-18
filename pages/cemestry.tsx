@@ -23,13 +23,13 @@ const Cemestry = () => (
   >
     <Header />
 
-    <Heading as="h1" textAlign="center" letterSpacing={"tighter"} m={12}>
+    <Heading as="h1"  color="white" textAlign="center" letterSpacing={"tighter"} m={12}>
       Cemestry
     </Heading>
 
     <Box mx={12} mb="16">
       <Box>
-        <Heading>Earn TSHARE by staking LP</Heading>
+        <Heading color="white">Earn TSHARE by staking LP</Heading>
 
         <SimpleGrid columns={3} gap={4} my={4}>
           {/* 1 */}
@@ -110,7 +110,7 @@ const Cemestry = () => (
         </SimpleGrid>
       </Box>
       <Box>
-        <Heading>Earn TSHARE by staking LP</Heading>
+        <Heading color="white">Earn TSHARE by staking LP</Heading>
 
         <SimpleGrid columns={3} gap={4} my={4}>
           {/* 1 */}

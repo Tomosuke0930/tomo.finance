@@ -22,7 +22,7 @@ const Pit = () => (
     bgSize="cover"
   >
     <Header />
-    <Box textAlign="center" letterSpacing={"tighter"}>
+    <Box textAlign="center" letterSpacing={"tighter"} color="white">
       <Heading as="h1" mt={12}>
         Buy & Redeem Bonds
       </Heading>
