@@ -50,7 +50,7 @@ const Home = () => (
       </Box>
     </HStack>
     <Center>
-      <Box bg={"orange.400"} rounded="sm">
+      <Box bg={"#FF9800"} rounded="sm">
         <HStack>
           <WarningTwoIcon color="black" pl={2} w={5} h={5} />
           <Text
