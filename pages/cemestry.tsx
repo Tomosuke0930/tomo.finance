@@ -27,99 +27,138 @@ const Cemestry = () => (
       Cemestry
     </Heading>
 
-    <Flex mx={12} mb="16">
-
-     
+    <Box mx={12} mb="16">
       <Box>
         <Heading>Earn TSHARE by staking LP</Heading>
 
-        <SimpleGrid columns={3} gap={4} my={4} >
-         {/* 1 */}
-        <Box
-        backgroundColor={"white"}
-        color="black"
-        opacity="90%"
-        rounded="md"
-        p={3}
-        
-      >
-        <HStack justifyContent="space-between" >
-          <Text as="h4">
-          TSHARE-FTM-LP
-          </Text>
-          <Image
-              rounded="full"
-              bg="gray"
-              src="https://tomb.finance/static/media/crypto_tomb_share.bf1a6c52.svg"
-              alt="Dan Abramov"
-              boxSize="45px"
-            />
-        </HStack>
-        <Text fontSize="16">Deposit TSHARE-FTM-LP Earn</Text>
-        <Text fontSize="16">TSHARE</Text>
-        <HStack justifyContent="space-between">
-        <Spacer></Spacer>
-        <Button
-            mt="3px"
-            letterSpacing="tight"
-            size="xs"
-            bg="#561EB0"
-            color="white"
-            rounded="sm"
-            _hover={{ bg: "#000" }}
+        <SimpleGrid columns={3} gap={4} my={4}>
+          {/* 1 */}
+          <Box
+            backgroundColor={"white"}
+            color="black"
+            opacity="90%"
+            rounded="md"
+            p={3}
           >
-            VIEW
-          </Button>
-        </HStack>
-      </Box>  
-      
-      <Box
-        backgroundColor={"white"}
-        color="black"
-        opacity="90%"
-        rounded="md"
-        p={3}
-      >
-        <HStack justifyContent="space-between">
-          <Text as="h4">
-          TSHARE-FTM-LP
-          </Text>
-          <Image
-              rounded="full"
-              bg="gray"
-              src="https://tomb.finance/static/media/crypto_tomb_share.bf1a6c52.svg"
-              alt="Dan Abramov"
-              boxSize="45px"
-            />
-        </HStack>
-        <Text fontSize="16">Deposit TSHARE-FTM-LP Earn</Text>
-        <Text fontSize="16">TSHARE</Text>
-        <HStack justifyContent="space-between">
-        <Spacer></Spacer>
-        <Button
-            mt="3px"
-            letterSpacing="tight"
-            size="xs"
-            bg="#561EB0"
-            color="white"
-            rounded="sm"
-            _hover={{ bg: "#000" }}
-          >
-            VIEW
-          </Button>
-        </HStack>
-      </Box>  
+            <HStack justifyContent="space-between">
+              <Text as="h4">TSHARE-FTM-LP</Text>
+              <Image
+                rounded="full"
+                bg="gray"
+                src="https://tomb.finance/static/media/crypto_tomb_share.bf1a6c52.svg"
+                alt="Dan Abramov"
+                boxSize="45px"
+              />
+            </HStack>
+            <Text fontSize="16">Deposit TSHARE-FTM-LP Earn</Text>
+            <Text fontSize="16">TSHARE</Text>
+            <HStack justifyContent="space-between">
+              <Spacer></Spacer>
+              <Button
+                mt="3px"
+                letterSpacing="tight"
+                size="xs"
+                bg="#561EB0"
+                color="white"
+                rounded="sm"
+                _hover={{ bg: "#000" }}
+              >
+                VIEW
+              </Button>
+            </HStack>
+          </Box>
 
-      {/* 3つ目の空白 */}
+          <Box
+            backgroundColor={"white"}
+            color="black"
+            opacity="90%"
+            rounded="md"
+            p={3}
+          >
+            <HStack justifyContent="space-between">
+              <Text as="h4">TSHARE-FTM-LP</Text>
+              <Image
+                rounded="full"
+                bg="gray"
+                src="https://tomb.finance/static/media/crypto_tomb_share.bf1a6c52.svg"
+                alt="Dan Abramov"
+                boxSize="45px"
+              />
+            </HStack>
+            <Text fontSize="16">Deposit TSHARE-FTM-LP Earn</Text>
+            <Text fontSize="16">TSHARE</Text>
+            <HStack justifyContent="space-between">
+              <Spacer></Spacer>
+              <Button
+                mt="3px"
+                letterSpacing="tight"
+                size="xs"
+                bg="#561EB0"
+                color="white"
+                rounded="sm"
+                _hover={{ bg: "#000" }}
+              >
+                VIEW
+              </Button>
+            </HStack>
+          </Box>
+
+          {/* 3つ目の空白 */}
+          <Box>
+            <Spacer></Spacer>
+          </Box>
+        </SimpleGrid>
+      </Box>
       <Box>
-        <Spacer></Spacer>
-      </Box>
+        <Heading>Earn TSHARE by staking LP</Heading>
 
-    </SimpleGrid>
-      
+        <SimpleGrid columns={3} gap={4} my={4}>
+          {/* 1 */}
+          <Box
+            backgroundColor={"white"}
+            color="black"
+            opacity="90%"
+            rounded="md"
+            p={3}
+          >
+            <HStack justifyContent="space-between">
+              <Text as="h4">TSHARE-FTM-LP</Text>
+              <Image
+                rounded="full"
+                bg="gray"
+                src="https://tomb.finance/static/media/crypto_tomb_share.bf1a6c52.svg"
+                alt="Dan Abramov"
+                boxSize="45px"
+              />
+            </HStack>
+            <Text fontSize="16">Deposit TSHARE-FTM-LP Earn</Text>
+            <Text fontSize="16">TSHARE</Text>
+            <HStack justifyContent="space-between">
+              <Spacer></Spacer>
+              <Button
+                mt="3px"
+                letterSpacing="tight"
+                size="xs"
+                bg="#561EB0"
+                color="white"
+                rounded="sm"
+                _hover={{ bg: "#000" }}
+              >
+                VIEW
+              </Button>
+            </HStack>
+          </Box>
 
+          <Box>
+            <Spacer></Spacer>
+          </Box>
+          {/* 3つ目の空白 */}
+          <Box>
+            <Spacer></Spacer>
+          </Box>
+        </SimpleGrid>
       </Box>
-    </Flex>
+    </Box>
     <Footer />
   </Box>
 );

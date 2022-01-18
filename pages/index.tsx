@@ -256,7 +256,6 @@ const Home = () => (
         </Stack>
       </Box>
     </SimpleGrid>
-    
     <Footer />
   </Box>
 );
