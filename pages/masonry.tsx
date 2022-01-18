@@ -25,7 +25,7 @@ const Masonry = () => (
   >
     <Header />
 
-    <Heading as="h1" textAlign="center" letterSpacing={"tighter"} m={12}>
+    <Heading as="h1" textAlign="center" letterSpacing={"tighter"} m={12} color="white">
       Masonry
     </Heading>
 
