@@ -58,8 +58,8 @@ function Header() {
           <NextLink href="/regurations" passHref>
             <Link p={2}>REGULATIONS</Link>
           </NextLink>
-          <NextLink href="/citlabo" passHref>
-            <Link>CITLabo</Link>
+          <NextLink href="/sctlabo" passHref>
+            <Link>SCTLabo</Link>
           </NextLink>
           <ButtonGroup
             ml={3}
