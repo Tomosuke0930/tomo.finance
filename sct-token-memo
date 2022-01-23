@@ -1,0 +1,43 @@
+変更点
+・常に売買できるわけではない。
+7年後に利確される！USDCによって。
+
+add: Change from SCT to USDC.
+そこからSCTの価格を算出するロジック！
+7777777 USDC >>> 1111111(7つのネイティブトークン)
+1$あたりで7つのネイティブトークンに投資を始める。
+1つのネイティブトークンが > 2倍になる。
+1SCT > 1$
+1SCT = 8/7 $ 
+
+2020年　1/1-12/31
+ETH
+AVAX
+LUNA
+MATIC
+SOL
+FTM
+
+1SCTのpriceの算出方法
+priceAtPurchaseの配列を作成=[102,3939,144,339,554,2940,5555]
+priceNow =[102,3939,144,339,554,2940,5555]
+
+for文で回す
+ChangeRate = priceANativeTokenNow/priceAtPurchase 
+PartOfNowANativeTokenPrice = priceAtPurchase * ChangeRate
+7つのPartOfNowANativeTokenPriceを合計して7でわる！
+
+■フロント
+・残りのtUSDC ? 
+・7年まであとどれくらい？
+・今のSCTの価格は？(７年後には終了！)
+
+■コントラクト
+・USDC > tUSDC
+・if(balanceOf(address(this)) === 0) {
+    USDCを7つのネイティブトークンに変更する。
+    7年後に全てのトークンをUSDCに変更する。
+    tUSDC を SCTに変えられるぜ！！！
+}
+・tUSDC をSCTに変更できる！！！
+・7年後にSCTをUSDCに変更できる！！！！
