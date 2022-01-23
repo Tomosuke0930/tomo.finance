@@ -1,7 +1,20 @@
-import { Box, Button, Heading, HStack, Image,Input,InputGroup,InputRightElement,SimpleGrid,Spacer,Text } from '@chakra-ui/react'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-
+import {
+  Box,
+  Button,
+  Grid,
+  GridItem,
+  Heading,
+  HStack,
+  Image,
+  Input,
+  InputGroup,
+  InputRightElement,
+  SimpleGrid,
+  Spacer,
+  Text,
+} from "@chakra-ui/react";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const Sctlabo = () => (
   <Box
@@ -11,14 +24,67 @@ const Sctlabo = () => (
   >
     <Header />
 
-    <Heading as="h1"  color="white" textAlign="center" letterSpacing={"tighter"} m={12}>
+    <Heading
+      as="h1"
+      color="white"
+      textAlign="center"
+      letterSpacing={"tighter"}
+      m={12}
+    >
       SevenChainTokenLabo
     </Heading>
 
     <Box mx={12} mb="16">
       <Box>
-        <Heading color="white">Deposit USDT to get Seven Chain Token</Heading>
+        <Grid
+          templateColumns="repeat(9, 1fr)"
+          mx="32"
+          my={16}
+          gap={4}
+          fontSize="small"
+        >
+          {/* 1列目 */}
+          <GridItem
+            colSpan={3}
+            backgroundColor={"white"}
+            opacity="90%"
+            rounded="md"
+            textAlign="center"
+            h="14"
+          >
+            <Box p={2}>
+              <Text color="black">The rest of tUSDC</Text>
+              <Text color="black">1111 / 7777777</Text>
+            </Box>
+          </GridItem>
 
+          <GridItem
+            colSpan={3}
+            backgroundColor={"white"}
+            opacity="90%"
+            rounded="md"
+            textAlign="center"
+            h="14"
+          >
+            <Box p={2}>
+              <Text color="black">The price of 1SCT</Text>
+              <Text color="black">1.2 $</Text>
+            </Box>
+          </GridItem>
+          <GridItem
+            colSpan={3}
+            backgroundColor={"white"}
+            opacity="90%"
+            rounded="md"
+            textAlign="center"
+            h="14"
+          >
+            <Box p={2}>
+              <Text color="black">Until SCT changes...</Text>
+              <Text color="black">3 years 5 months 3days</Text>
+            </Box>
+          </GridItem>
+        </Grid>
         <SimpleGrid columns={3} gap={4} my={4}>
           {/* 1 */}
           <Box
@@ -92,19 +158,6 @@ const Sctlabo = () => (
           </Box>
 
           {/* 3つ目の空白 */}
-          <Box>
-            <Spacer></Spacer>
-          </Box>
-        </SimpleGrid>
-      </Box>
-
-
-
-      <Box>
-        <Heading color="white">Buy & Sell for Seven Chain Token</Heading>
-
-        <SimpleGrid columns={3} gap={4} my={4}>
-          {/* 1 */}
           <Box
             backgroundColor={"white"}
             color="black"
@@ -113,7 +166,7 @@ const Sctlabo = () => (
             p={3}
           >
             <HStack justifyContent="space-between">
-              <Text as="h4">Buy SCT</Text>
+              <Text as="h4">Change to USDC</Text>
               <Image
                 rounded="full"
                 bg="gray"
@@ -122,8 +175,9 @@ const Sctlabo = () => (
                 boxSize="45px"
               />
             </HStack>
-            <Text fontSize="16">You can buy SCT by fUSDT</Text>
-            <HStack justifyContent="space-between" mt={5}>
+            <Text fontSize="16">Change from SCT to</Text>
+            <Text fontSize="16">USDC</Text>
+            <HStack justifyContent="space-between">
               <Spacer></Spacer>
               <Button
                 mt="3px"
@@ -134,57 +188,15 @@ const Sctlabo = () => (
                 rounded="sm"
                 _hover={{ bg: "#000" }}
               >
-                VIEW
+                Change
               </Button>
             </HStack>
-          </Box>
-
-          <Box
-            backgroundColor={"white"}
-            color="black"
-            opacity="90%"
-            rounded="md"
-            p={3}
-          >
-            <HStack justifyContent="space-between">
-              <Text as="h4">Sell SCT</Text>
-              <Image
-                rounded="full"
-                bg="gray"
-                src="https://tomb.finance/static/media/crypto_tomb_share.bf1a6c52.svg"
-                alt="Dan Abramov"
-                boxSize="45px"
-              />
-            </HStack>
-            <Text fontSize="16">You can change from SCT to fUSDT</Text>
-            
-            <HStack justifyContent="space-between" mt={5}>
-              <Spacer></Spacer>
-              <Button
-                mt="3px"
-                letterSpacing="tight"
-                size="xs"
-                bg="#561EB0"
-                color="white"
-                rounded="sm"
-                _hover={{ bg: "#000" }}
-                
-              >
-                VIEW
-              </Button>
-            </HStack>
-          </Box>
-
-          {/* 3つ目の空白 */}
-          <Box>
-            <Spacer></Spacer>
           </Box>
         </SimpleGrid>
       </Box>
     </Box>
     <Footer />
   </Box>
-
 );
 
-export default Sctlabo
+export default Sctlabo;
